@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <title>DOORGUARD</title>
+</head>
+
+<body>
+    <div class="logo">
+        <header>
+            <h1 id="logoname">DOORGUARD</h1>
+        </header>
+    </div>
+    <div class="mysec">
+        <form action="/checkin" method="post">
+            <div class="form-container">
+                <h2 id="sub">Please Enter the below details:</h2>
+                <label for="visitorName">Visitor Name:</label>
+                <input type="text" id="visitorName" name="visitorName" placeholder="Enter your Name" required>
+                <br />
+                <label for="visitorAddress">Visitor Address:</label>
+                <input type="text" id="visitorAddress" name="visitorAddress" placeholder="Enter Your Address" required>
+                <br />
+                <label for="visitorContact">Contact Details:</label>
+                <input type="number" id="visitorContact" name="visitorContact" placeholder="Enter Contact details"
+                    required>
+                <br />
+                <label for="residentname">Resident Name:</label>
+                <input type="text" id="residentName" name="residentName" placeholder="Enter Name" required>
+                <br />
+                <label for="visitTime">Visiting Time:</label>
+                <input type="time" id="visitTime" name="visitTime" required>
+                <br />
+                <label for="visitDate">Date:</label>
+                <input type="date" id="visitDate" name="visitDate" required>
+                <br />
+                <label for="purpose">Purpose (Optional):</label>
+                <input type="text" id="purpose" name="purpose" placeholder="Enter Purpose of Visit">
+
+                <br />
+                <br />
+
+
+                <input type="submit" value="Submit">
+                <input name='reset' type="reset" value='Reset'>
+
+                <button class="btn" type="submit" onclick="window.location.href='index.html'">Home</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

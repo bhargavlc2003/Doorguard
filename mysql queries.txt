@@ -1,0 +1,5 @@
+create database doorguard;
+
+use doorguard;
+
+create table visitors(visitorName varchar(255), visitorAddress varchar(255), visitorContact bigint, residentName varchar(255), visitTime time, visitDate date, purpose varchar(255));

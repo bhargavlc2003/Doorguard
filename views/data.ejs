@@ -1,0 +1,60 @@
+<!-- views/data.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="tablestyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <title>Doorguard Visitor Entries</title> 
+</head>
+<body>
+  <section>
+  <h1>DOORGUARD - Visitor Details</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+      <tr>
+        <th>Visitor Name</th>
+        <th>Visitor Address</th>
+        <th>Visitor Contact</th>
+        <th>Resident Name</th>
+        <th>Visit Time</th>
+        <th>Visit Date</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+    </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+      <% visitors.forEach(visitor => { %>
+        <tr>
+          <td><%= visitor.visitorName %></td>
+          <td><%= visitor.visitorAddress %></td>
+          <td><%= visitor.visitorContact %></td>
+          <td><%= visitor.residentName %></td>
+          <td><%= visitor.visitTime %></td>
+          <td><%= visitor.visitDate %></td>
+          <td><%= visitor.purpose %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  </div>
+  </section>
+  <div class="buttonclass">
+  <button class="tablebuttons" type="submit" onclick="window.location.href='index.html'">Home</button>
+  
+  
+  <form action="/truncate" method="post">
+    <button type="submit" class="tablebuttons">Clear All Entries</button>
+</form>
+
+</div>
+</body>
+</html>

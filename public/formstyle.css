@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bg main.jpg");
+    background-size: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* header {
+    position: fixed;
+    background: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+} */
+
+.logo{
+    padding: auto;
+    background-color: black;
+    width: 100%;
+    height: 75px;
+    position: absolute;
+}
+
+#logoname{
+    color: #ffff;
+    font-family: 'Kanit', sans-serif;
+    padding: 15px 0 15px 15px;
+
+}
+
+/* .form-container {
+
+    flex-direction: column;
+
+    margin-left: -250px;
+    margin-right: auto;
+    margin-top: -150px;
+    padding: 25px;
+    background-color: #e9e5e5;
+    border-radius: 15px;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    height: 500px;
+    width: 600px;
+    font-size: 1.5rem;
+    justify-content: space-between
+} */
+.form-container {
+    margin-top:50px;
+}
+.mysec{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    /* border: 2px solid black; */
+    margin: auto;
+    position: relative;
+    padding: 25px;
+    color:white;
+}
+
+
+input {
+    border-radius: 3px;
+    border-color: #e9e5e5;
+
+}
+input[type=text], input[type=date],input[type=time], input[type=number] {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.btn {
+    background-color: #000080;
+    color: white;
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    align-items: center;
+    font-size: 1.3rem;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #000080;
+    color: white;
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    align-items: center;
+    font-size: 1.3rem;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    border: 2px solid black;
+    background-color: #01013f;
+}
+
+
+input[type="reset"] {
+    background-color: #000080;
+    color: white;
+    border-radius: 5px;
+    width: 180px;
+    height: 40px;
+    align-items: center;
+    font-size: 1.3rem;
+    border: none;
+}
+input[type="reset"]:hover {
+    border: 2px solid black;
+    background-color: #01013f;
+}
+
+
+.btn:hover {
+    border: 2px solid black;
+    background-color: #01013f;
+}
